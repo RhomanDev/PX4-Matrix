@@ -130,7 +130,7 @@ public:
         return r;
     }
 
-     Vector cross(const Matrix31 & b) const {
+     Vector cross(const Matrix<double,3,1> & b) const {
         const Vector &a(*this);
         Vector<double, 3> r;
         r(0)=a(1)*b(2,0) - a(2)*b(1,0);
